@@ -12,6 +12,8 @@
 		4B37E10D1C6806F7009AB622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E10B1C6806F7009AB622 /* Main.storyboard */; };
 		4B37E10F1C6806F7009AB622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E10E1C6806F7009AB622 /* Assets.xcassets */; };
 		4B37E1121C6806F7009AB622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E1101C6806F7009AB622 /* LaunchScreen.storyboard */; };
+		4B37E11A1C68088D009AB622 /* Air Americana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E1191C68088D009AB622 /* Air Americana.ttf */; };
+		4B37E11C1C6808A1009AB622 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E11B1C6808A1009AB622 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4B37E10E1C6806F7009AB622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B37E1111C6806F7009AB622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B37E1131C6806F7009AB622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B37E1191C68088D009AB622 /* Air Americana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Air Americana.ttf"; sourceTree = "<group>"; };
+		4B37E11B1C6808A1009AB622 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		4B37E1061C6806F7009AB622 /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				4B37E11B1C6808A1009AB622 /* btn.wav */,
+				4B37E1191C68088D009AB622 /* Air Americana.ttf */,
 				4B37E1071C6806F7009AB622 /* AppDelegate.swift */,
 				4B37E1091C6806F7009AB622 /* ViewController.swift */,
 				4B37E10B1C6806F7009AB622 /* Main.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					4B37E1031C6806F7009AB622 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z2X4ZM3K6A;
 					};
 				};
 			};
@@ -122,8 +129,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B37E11C1C6808A1009AB622 /* btn.wav in Resources */,
 				4B37E1121C6806F7009AB622 /* LaunchScreen.storyboard in Resources */,
 				4B37E10F1C6806F7009AB622 /* Assets.xcassets in Resources */,
+				4B37E11A1C68088D009AB622 /* Air Americana.ttf in Resources */,
 				4B37E10D1C6806F7009AB622 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raj.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raj.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
